@@ -16,6 +16,6 @@ gem 'pry'
 
 Comandos para instalação de dependências:
 
-Bundle install
+Bundle install 
 
 
