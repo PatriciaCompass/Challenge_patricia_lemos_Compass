@@ -7,7 +7,7 @@ Funcionalidade: Busca
 
   Cenário: Buscar por um produto existente
     Dado que esteja na home
-    Quando realizar uma busca pro produto existente
+    Quando realizar uma busca por produto existente
     Então deverão ser retornados resultados na busca 
 
   Esquema do Cenário: Buscar por produtos existentes
