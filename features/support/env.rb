@@ -22,7 +22,7 @@ Capybara.register_driver :my_chrome do |app|
        caps['goog:chromeOptions']['args'] << '--disable-site-isolation-trials'
     end
     client = Selenium::WebDriver::Remote::Http::Default.new
-          
+    client.read_timeout = 90      
     options = { browser: :chrome, desired_capabilities: caps }
 
     puts 'Raising driver'
