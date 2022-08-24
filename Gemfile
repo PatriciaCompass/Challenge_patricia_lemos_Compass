@@ -6,3 +6,5 @@ gem 'site_prism'
 gem 'selenium-webdriver'
 gem 'rspec'
 gem 'pry'
+gem 'rails-controller-testing'
+

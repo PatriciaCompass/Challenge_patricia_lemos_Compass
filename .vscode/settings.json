@@ -1,0 +1,5 @@
+{
+    "ruby.useBundler": true,
+    "solargraph.autoformat": true,
+    "ruby.intellisense": false
+}

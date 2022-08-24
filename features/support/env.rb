@@ -5,6 +5,7 @@ require 'site_prism'
 require 'selenium-webdriver'
 require 'rspec'
 require 'pry'
+require 'rails-controller-testing'
 
 ENVIRONMENT = ENV['ENVIRONMENT']
 ENVIRONMENT_CONFIG = YAML.load_file(File.dirname(__FILE__) + "/environment/#{ENVIRONMENT}.yml")

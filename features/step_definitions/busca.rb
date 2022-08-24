@@ -1,16 +1,23 @@
 Dado('que esteja na home') do
-    @home_page = Home.new
-    @home_page.load
-    binding.pry
+   @home = Home.new
+   @home.load
 end
   
-Quando('realizar uma busca por produto existente') do
-    @home_page.search_for('SPEAKERS')
-    @sarch_results_page = SearchResults.new
-    binding.pry
+Quando('realizar uma busca por produto') do
+   @home.search_for('Speakers')
+   @search_results = SearchResults.new
 end
   
+Então('deve ser retornado resultado na busca') do
+  @search_results
+  expect(@search_results).to have_products
+end
+
 Então('deverão ser retornados resultados na busca') do
-  @sarch_results_page
-  expect(@sarch_results_page).to have_products
+   pending # Write code here that turns the phrase above into concrete actions
 end
+
+Quando('buscar pelo produto {string}') do |tipo|                           
+   
+end                                                                          
+                                                                           
